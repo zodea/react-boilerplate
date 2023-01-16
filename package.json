@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "is-ci || husky install"
   },
   "dependencies": {
+    "is-ci": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
